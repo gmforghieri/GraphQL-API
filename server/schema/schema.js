@@ -16,7 +16,10 @@ const RootQuery = new GraphQLOjectType({
     fields: {
        book: {
            type: BookType,
-            args:{id:{type:GraphQLString}}
+            args:{id:{type:GraphQLString}},
+           resolve(parent,args){
+
+           }
        }
     }
 });
