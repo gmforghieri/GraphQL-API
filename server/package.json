@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,5 +13,6 @@
   "devDependencies": {
     "express-graphql": "^0.9.0",
     "graphql": "^14.5.8"
-  }
+  },
+  "description": ""
 }
