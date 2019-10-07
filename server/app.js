@@ -4,8 +4,10 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const app = express();
 
+require('dotenv').config();
+
 mongoose
-    .connect('mongodb+srv://gmforghieri:3%23fa%25D5co58nX@cluster0-9mmzr.mongodb.net/test?retryWrites=true&w=majority', {
+    .connect(process.env.MONGODB_URI, {
         useUnifiedTopology: true,
         useNewUrlParser: true,
     })
