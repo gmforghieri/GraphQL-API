@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { graphql, compose } from 'react-apollo';
 import { getAuthorsQuery, addBookMutation, getBooksQuery } from '../queries/queries';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 
 class AddBook extends Component {
     constructor(props){
@@ -51,8 +53,11 @@ class AddBook extends Component {
                         { this.displayAuthors() }
                     </select>
                 </div>
-                <button>+</button>
+                <Fab color="primary" aria-label="add" id="button" type="submit">
+                    <AddIcon />
+                </Fab>
             </form>
+
         );
     }
 }
