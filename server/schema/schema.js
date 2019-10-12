@@ -33,7 +33,6 @@ const AuthorType = new GraphQLObjectType({
     fields: ( ) => ({
         id: { type: GraphQLID },
         name: { type: GraphQLString },
-        age: { type: GraphQLInt },
         books: {
             type: new GraphQLList(BookType),
             resolve(parent, args){
@@ -82,12 +81,10 @@ const Mutation = new GraphQLObjectType({
             type: AuthorType,
             args: {
                 name: { type: GraphQLString },
-                age: { type: GraphQLInt }
             },
             resolve(parent, args){
                 let author = new Author({
                     name: args.name,
-                    age: args.age
                 });
                 return author.save();
             }
