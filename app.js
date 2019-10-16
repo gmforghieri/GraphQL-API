@@ -6,6 +6,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+express.static(path_join(__dirname, '/client/build'));
 
 app.use(cors());
 
@@ -24,6 +25,12 @@ app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true
 }));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
+
 
 const PORT = process.env.PORT || 4000;
 const host = '0.0.0.0';
