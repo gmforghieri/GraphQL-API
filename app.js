@@ -28,6 +28,6 @@ app.use('/graphql', graphqlHTTP({
 const PORT = process.env.PORT || 4000;
 const host = '0.0.0.0';
 
-app.listen( PORT, host, () => {
+app.listen( PORT, () => {
     console.log(`now listening for requests on port ${PORT}`)
 });

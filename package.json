@@ -1,12 +1,14 @@
 {
-  "name": "server",
+  "name": "graphql-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A simple reading list application, built to practice graphql and react.",
+  "main": "app.js",
+  "engines": {
+    "node": "10.15.2"
+  },
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.16.2",
@@ -16,5 +18,15 @@
     "mongoose": "^5.7.4",
     "dotenv": "latest"
   },
-  "description": ""
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmforghieri/GraphQL-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmforghieri/GraphQL-API/issues"
+  },
+  "homepage": "https://github.com/gmforghieri/GraphQL-API#readme"
 }
