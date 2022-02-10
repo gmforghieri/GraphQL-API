@@ -39,7 +39,7 @@
     "graphql-tag": "^2.9.2",
     "lodash": "^4.17.19",
     "mongoose": "^5.7.4",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.6.0",
     "raf": "^3.3.2",
     "react": "^16.5.0",
